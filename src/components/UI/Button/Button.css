@@ -1,0 +1,34 @@
+.Button {
+  background-color: transparent;
+  /* border: none; */
+  width: 130px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 20px;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+.Button:first-of-type {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.Button:hover {
+  transform: scale(1.05);
+}
+
+.Start {
+  color: #5c9210;
+}
+
+.Pause {
+  color: #944317;
+}
+
+.Reset {
+  color: #3740c8;
+}
