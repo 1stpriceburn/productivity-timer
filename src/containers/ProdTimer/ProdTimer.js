@@ -58,7 +58,7 @@ class ProdTimer extends Component {
         } else {
           clearInterval(updateTimeInterval);
         }
-      }, 1);
+      }, 1000);
     }, 10);
   };
 
@@ -77,6 +77,7 @@ class ProdTimer extends Component {
   secondCounter = () => {};
 
   finishedPomodoroCycleSound = () => {
+    this.startTimerHandler();
     let audio = document.getElementById("audio");
     audio.play();
 
@@ -93,11 +94,10 @@ class ProdTimer extends Component {
         ></Timer>
         <TimerControls
           resetTimer={this.resetTimerHandler}
-          startTimer={this.startTimerHandler}
+          startTimer={this.finishedPomodoroCycleSound}
           pauseTimer={this.pauseTimerHandler}
           timerState={this.state.timeIsTicking}
         ></TimerControls>
-        <button onClick={this.finishedPomodoroCycleSound}>click me</button>
         <audio id="audio" src={Audio}></audio>
       </div>
     );

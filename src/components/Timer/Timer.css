@@ -19,6 +19,7 @@
 }
 
 h1 {
+  margin-top: 50px;
   font-weight: 400;
   text-transform: uppercase;
   z-index: 100;
@@ -28,7 +29,7 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: greenyellow;
+  background: rgba(172, 255, 47, 0.438);
   height: 4%;
   width: 100%;
   z-index: 90;
